@@ -57,6 +57,9 @@
             # 导入系统配置
             ./system/configuration.nix
 
+            # 导入用户服务配置
+            ./user/services/default.nix
+
             # 导入 Home Manager 模块
             home-manager.nixosModules.home-manager
             {
