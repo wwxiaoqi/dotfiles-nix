@@ -2,17 +2,14 @@
 let
   my-packages = with pkgs;
     [
-      neofetch
       zip
       xz
       unzip
       p7zip
-      ripgrep
+      git
       jq
       eza
       fzf
-      iperf3
-      dnsutils
       ldns
       aria2
       socat
@@ -23,17 +20,12 @@ let
       tree
       gawk
       zstd
-      nix-output-monitor
       btop
       iotop
       iftop
       strace
       ltrace
       lsof
-      sysstat
-      pciutils
-      usbutils
-      starship
     ] ++ opt-config.packages;
 in {
   home.username = "${opt-config.username}";

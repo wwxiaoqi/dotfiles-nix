@@ -1,7 +1,1 @@
-{lib, opt-config, ... }:
-{
-  imports = 
-    [
-    ]
-  ;
-}
+{ lib, opt-config, ... }: { imports = [ ]; }

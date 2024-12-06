@@ -50,6 +50,9 @@
   # 启用 Zsh shell
   programs.zsh.enable = true;
 
+  # 启用 Fish shell
+  programs.fish.enable = true;
+
   # 设置 Nix 替代服务器
   nix.settings.substituters =
     [ "https://mirror.sjtu.edu.cn/nix-channels/store" ];
