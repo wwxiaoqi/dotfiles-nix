@@ -13,7 +13,13 @@
     ../hosts/${hostname}/hardware-configuration.nix
     ./user.nix
     ./packages.nix
-  ];
+    ./modules/opengl.nix
+  ] ++ lib.optionals (builtins.elem "nvidia" opt-config.gpu-type)
+    [ ./modules/nvidia.nix ]
+    ++ lib.optionals (builtins.elem "intel-nvidia" opt-config.gpu-type)
+    [ ./modules/nvidia.nix ]
+    ++ lib.optionals (builtins.elem "amd" opt-config.gpu-type)
+    [ ./modules/amd.nix ];
 
   # 启用 systemd-boot 作为 EFI 引导加载器
   boot.loader.systemd-boot.enable = true;
@@ -52,6 +58,9 @@
 
   # 启用 Fish shell
   programs.fish.enable = true;
+
+  # 启用 Polkit
+  security.polkit.enable = true;
 
   # 设置 Nix 替代服务器
   nix.settings.substituters =

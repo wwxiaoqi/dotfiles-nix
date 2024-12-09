@@ -1,12 +1,12 @@
 { pkgs, ... }:
 
 {
-  # QT Theme
+  # QT 主题
   qt.enable = true;
   qt.platformTheme.name = "gtk";
   qt.style.name = "adwaita-dark";
 
-  # Cursor Theme
+  # 光标主题
   home.pointerCursor = {
     gtk.enable = true;
     package = pkgs.bibata-cursors;
@@ -14,7 +14,7 @@
     size = 10;
   };
 
-  # GTK Theme
+  # GTK 主题
   gtk = {
     enable = true;
     theme = {

@@ -6,25 +6,12 @@
       "nvidia-x11"
       "nvidia-settings"
       "nvidia-persistenced"
-      "spotify"
-      "wpsoffice"
-      "baidunetdisk"
-      "dingtalk"
-      "qq"
-      "wechat-universal-bwrap"
-      "wemeet-bin-bwrap"
-      "amdgpu-pro"
-      "wechat-uos"
-      "widevine-cdm"
-      "discord"
-      "steam"
-      "steam-original"
-      "steam-unwrapped"
-      "wpsoffice-365"
     ];
 
   # 默认不安全软件包的超集
-  allowed-insecure-packages = [ "electron-11.5.0" "openssl-1.1.1w" ];
+  allowed-insecure-packages = [
+
+  ];
 
   # 稳定分支软件包
   stable-pkgs = import nixpkgs {
