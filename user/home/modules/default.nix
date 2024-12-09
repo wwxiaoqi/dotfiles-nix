@@ -10,5 +10,9 @@
     ./fzf
     ./fonts
     ./mpv
+  ] ++ lib.optionals (opt-config.wm-options.hyprland) [
+    ./hyprland
+    ./foot
+    ./rofi
   ];
 }

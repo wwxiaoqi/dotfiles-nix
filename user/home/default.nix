@@ -10,6 +10,7 @@ let
       jq
       eza
       fzf
+      bat
       ldns
       aria2
       socat
@@ -26,6 +27,7 @@ let
       strace
       ltrace
       lsof
+      sudo
     ] ++ opt-config.packages;
 in {
   home.username = "${opt-config.username}";

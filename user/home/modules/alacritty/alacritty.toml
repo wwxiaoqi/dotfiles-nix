@@ -1,0 +1,45 @@
+[shell]
+program = "/bin/fish"
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+opacity = 1
+dynamic_title = true
+
+[font]
+size = 16
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[font.offset]
+x = 0
+y = 0
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[colors]
+[colors.normal]
+black = "0x31333D"
+red = "0xF2A2A2"
+green = "0xACE6B2"
+yellow = "0xF2D6A2"
+blue = "0x91B0D9"
+magenta = "0xF2B6EF"
+cyan = "0xA9FCED"
+white = "0xCCCCCC"
+
+[colors.bright]
+black = "0x1F243D"
+red = "0xF27979"
+green = "0x95E69D"
+yellow = "0xF2C879"
+blue = "0x6C9BD9"
+magenta = "0xF29DEE"
+cyan = "0x7EFCE5"
+white = "0xffffff"

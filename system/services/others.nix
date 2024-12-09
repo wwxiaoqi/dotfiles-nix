@@ -1,5 +1,4 @@
-{opt-config, ...}:
-{
+{ opt-config, ... }: {
   # 启用触摸板
   services.libinput.enable = true;
 

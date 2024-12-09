@@ -1,5 +1,4 @@
-{pkgs, ...}:
-{
+{ pkgs, ... }: {
   # Pipewire
   services.pipewire = {
     enable = true;
