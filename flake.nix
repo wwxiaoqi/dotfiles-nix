@@ -45,7 +45,7 @@
           modules = [
             # 使用 NUR overlay
             {
-              nixpkgs.overlays = [ nur.overlay ];
+              nixpkgs.overlays = [ nur.overlays.default ];
             }
 
             # 添加不稳定包 overlay
