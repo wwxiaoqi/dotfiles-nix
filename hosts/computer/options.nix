@@ -12,8 +12,8 @@
     gpu-type = [ "intel" ];
 
     # Optimus PRIME
-    # intel-bus-id = "PCI:0:2:0";
-    # nvidia-bus-id = "PCI:3:0:0";
+    intel-bus-id = "";
+    nvidia-bus-id = "";
 
     # Use AutoCPU
     autocpu = false;
