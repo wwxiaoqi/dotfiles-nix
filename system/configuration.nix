@@ -48,9 +48,6 @@
   # 启用 dconf
   programs.dconf.enable = true;
 
-  # 启用 Zsh shell
-  programs.zsh.enable = true;
-
   # 启用 Fish shell
   programs.fish.enable = true;
 
